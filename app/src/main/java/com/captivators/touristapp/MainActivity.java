@@ -1,5 +1,4 @@
-s
-        package com.captivators.touristapp;
+package com.captivators.touristapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
