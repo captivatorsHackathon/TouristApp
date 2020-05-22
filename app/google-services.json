@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "515385401708",
+    "firebase_url": "https://touristapp-277921.firebaseio.com",
+    "project_id": "touristapp-277921",
+    "storage_bucket": "touristapp-277921.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:515385401708:android:36aea83a642d6869135349",
+        "android_client_info": {
+          "package_name": "com.captivators.touristapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "515385401708-udqqp53vkf6t68pr267ar2cecjkgdio1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtUPArPqbNakCPNmZXrtaKyw54GA1x__I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "515385401708-udqqp53vkf6t68pr267ar2cecjkgdio1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
