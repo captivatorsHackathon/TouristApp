@@ -56,7 +56,7 @@ public class LotusTempleMaps extends FragmentActivity implements
         LatLng lotusTemple = new LatLng(28.553699, 77.258816);
 
 
-        Marker lotustemple  = mMap.addMarker(new MarkerOptions().position(lotusTemple).title("Taj Mahal").snippet("The Taj Mahal is an ivory-white marble mausoleum ").icon(BitmapDescriptorFactory.fromBitmap(resizeMapIcons("marker",150,150))));
+        Marker lotustemple  = mMap.addMarker(new MarkerOptions().position(lotusTemple).title("Lotus Temple").snippet("The Lotus Temple, located in Delhi, India, is a Baháʼí House of Worship").icon(BitmapDescriptorFactory.fromBitmap(resizeMapIcons("marker",150,150))));
 
         mMap.moveCamera(CameraUpdateFactory.newLatLng(lotusTemple));
 

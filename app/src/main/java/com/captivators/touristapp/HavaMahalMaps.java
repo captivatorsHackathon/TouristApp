@@ -56,7 +56,7 @@ public class HavaMahalMaps extends FragmentActivity implements
         LatLng havaMahal = new LatLng(26.924175 ,75.826744);
 
 
-        Marker havamahal  = mMap.addMarker(new MarkerOptions().position(havaMahal).title("Taj Mahal").snippet("The Taj Mahal is an ivory-white marble mausoleum ").icon(BitmapDescriptorFactory.fromBitmap(resizeMapIcons("marker",150,150))));
+        Marker havamahal  = mMap.addMarker(new MarkerOptions().position(havaMahal).title("Hava Mahal").snippet("THawa Mahal is a palace in Jaipur, India. Made with the red and pink sandstone ").icon(BitmapDescriptorFactory.fromBitmap(resizeMapIcons("marker",150,150))));
 
         mMap.moveCamera(CameraUpdateFactory.newLatLng(havaMahal));
         Polygon polyline1 = googleMap.addPolygon(new PolygonOptions()

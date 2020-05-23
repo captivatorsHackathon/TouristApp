@@ -56,7 +56,7 @@ public class IndiaGateMaps extends FragmentActivity implements
         LatLng indiaGate = new LatLng(28.612837, 77.229531);
 
 
-        Marker tajmahal  = mMap.addMarker(new MarkerOptions().position(indiaGate).title("Taj Mahal").snippet("The Taj Mahal is an ivory-white marble mausoleum ").icon(BitmapDescriptorFactory.fromBitmap(resizeMapIcons("marker",150,150))));
+        Marker tajmahal  = mMap.addMarker(new MarkerOptions().position(indiaGate).title("India Gate").snippet("The India Gate is a war memorial located astride the Rajpath").icon(BitmapDescriptorFactory.fromBitmap(resizeMapIcons("marker",150,150))));
 
         mMap.moveCamera(CameraUpdateFactory.newLatLng(indiaGate));
         Polygon polyline1 = googleMap.addPolygon(new PolygonOptions()

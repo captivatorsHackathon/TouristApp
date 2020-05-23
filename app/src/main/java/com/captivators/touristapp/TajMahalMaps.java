@@ -77,8 +77,6 @@ public class TajMahalMaps extends FragmentActivity implements
         // Set listeners for click events.
         googleMap.setOnPolylineClickListener(this);
         googleMap.setOnPolygonClickListener(this);
-
-
     }
 
     public Bitmap resizeMapIcons(String iconName,int width, int height){

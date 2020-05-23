@@ -30,17 +30,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ImageScan" />
+        <activity android:name=".ImageScan" android:label="Get info" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <activity android:name=".ListOfPlaces" />
-        <activity android:name=".IndiaGateInfo" />
-        <activity android:name=".TajMahalInfo" />
-        <activity android:name=".LotusTempleInfo" />
-        <activity android:name=".HavaMahalInfo" />
+        <activity android:name=".ListOfPlaces" android:label="Plan a Trip" android:theme="@style/Theme.AppCompat.DayNight"/>
+        <activity android:name=".IndiaGateInfo" android:label="India Gate" android:theme="@style/Theme.AppCompat.DayNight"/>
+        <activity android:name=".TajMahalInfo" android:label="Taj Mahal" android:theme="@style/Theme.AppCompat.DayNight"/>
+        <activity android:name=".LotusTempleInfo" android:label="Lotus Temple" android:theme="@style/Theme.AppCompat.DayNight"/>
+        <activity android:name=".HavaMahalInfo" android:label="Hava Mahal" android:theme="@style/Theme.AppCompat.DayNight"/>
         <activity android:name=".TajMahalMaps" />
         <activity android:name=".LotusTempleMaps" />
         <activity android:name=".HavaMahalMaps" />

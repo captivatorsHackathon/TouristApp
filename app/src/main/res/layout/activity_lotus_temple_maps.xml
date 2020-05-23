@@ -19,6 +19,9 @@
         android:layout_height="wrap_content"
         android:text="scan image"
         android:id="@+id/xyzlotus"
-        android:layout_alignParentBottom="true"/>
+        android:layout_alignParentBottom="true"
+        android:textColor="#ffffff"
+        android:layout_margin="12dp"
+        android:backgroundTint="#45B6Fe"/>
 
 </RelativeLayout>

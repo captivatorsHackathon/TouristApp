@@ -14,23 +14,13 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="12dp"
             >
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
-                    android:text="Lotus Temple"
-                    android:textColor="#39CCCC"
-                    android:textSize="30sp"
-                    android:textStyle="bold"
-                    android:textAlignment="center"
-                    >
-                </TextView>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -64,7 +54,8 @@
                                 <ImageView
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-
+                                    android:src="@drawable/lotus_temple"
+                                    android:scaleType="centerCrop"
                                     android:layout_centerInParent="true"
                                     android:id="@+id/Image1"
                                     />
@@ -76,6 +67,7 @@
                     </LinearLayout>
 
                     <TextView
+                        android:layout_margin="12dp"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="The Lotus Temple, located in Delhi, India, is a Baháʼí House of Worship that was dedicated in December 1986."
@@ -85,10 +77,14 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="Architect"
-                        android:textStyle="bold">
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:layout_margin="4dp"
+                        >
 
                     </TextView>
                     <TextView
+                        android:layout_margin="8dp"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="Fariborz Sahba">
@@ -101,12 +97,14 @@
                         android:text="ADDRESS:"
                         android:textStyle="bold"
                         android:textColor="#000000"
+                        android:layout_margin="4dp"
                         >
 
                     </TextView>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:layout_margin="8dp"
                         android:text=" Lotus Temple Rd, Bahapur, Shambhu Dayal Bagh, Kalkaji, New Delhi, Delhi 110019"
                         >
                     </TextView>
@@ -117,6 +115,7 @@
                         android:text="VISITING HOURS:"
                         android:textStyle="bold"
                         android:textColor="#000000"
+                        android:layout_margin="4dp"
                         >
 
                     </TextView>
@@ -124,6 +123,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="9 AM to 7 PM "
+                        android:layout_margin="8dp"
                         >
                     </TextView>
                 </LinearLayout>
@@ -132,7 +132,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="discover lotus temple"
-                android:id="@+id/discover_lotus_temple">
+                android:id="@+id/discover_lotus_temple"
+                android:layout_margin="12dp"
+                android:textColor="#ffffff"
+                android:backgroundTint="#45B6Fe">
 
             </Button>
         </LinearLayout>
