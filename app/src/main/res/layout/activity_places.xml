@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".places">
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           >
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_gravity="center"
+                   android:layout_marginTop="10dp"
+                   android:text="Hava Mahal"
+                   android:textColor="#39CCCC"
+                   android:textSize="30sp"
+                   android:textStyle="bold"
+                   android:textAlignment="center"
+                   >
+               </TextView>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_marginTop="50dp"
+                   android:layout_marginRight="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:orientation="vertical"
+                   >
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:orientation="horizontal"
+                       android:layout_marginBottom="10dp"
+                       >
+
+                       <androidx.cardview.widget.CardView
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent">
+                           android:layout_width="0dp"
+                           android:layout_height="match_parent"
+                           android:layout_weight="1"
+                           android:gravity="center"
+                           android:layout_marginRight="5dp"
+                           android:layout_marginTop="35dp"
+                           >
+
+                           <RelativeLayout
+                               android:layout_width="match_parent"
+                               android:layout_height="300dp"
+                               >
+                               <ImageView
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent"
+                                   android:src="@drawable/havamahal"
+                                   android:layout_centerInParent="true"
+                                   android:id="@+id/Image1"
+                                   />
+                           </RelativeLayout>
+
+
+                       </androidx.cardview.widget.CardView>
+                       </LinearLayout>
+               </LinearLayout>
+           </RelativeLayout>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:text="The structure was built in 1799 by Maharaja Sawai Pratap Singh, the grandson of Maharaja Sawai Jai Singh, who was the founder of Jaipur"
+               >
+           </TextView>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:text="Architect"
+               android:textStyle="bold">
+
+           </TextView>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:text="  Pratap Singh of Jaipur, Lal Chand Ustad">
+
+           </TextView>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:text="ADDRESS:"
+               android:textStyle="bold"
+               android:textColor="#000000"
+               >
+
+           </TextView>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:text=" Hawa Mahal Rd, Badi Choupad, J.D.A. Market, Pink City, Jaipur, Rajasthan 302002"
+               >
+           </TextView>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:text="VISITING HOURS:"
+               android:textStyle="bold"
+               android:textColor="#000000"
+               >
+
+           </TextView>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:text="05:00 PM and 09:00 PM."
+               >
+           </TextView>
+
+
+       </LinearLayout>
+   </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
