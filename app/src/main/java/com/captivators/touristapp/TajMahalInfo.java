@@ -23,5 +23,23 @@ public class TajMahalInfo extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        Button btn_food = findViewById(R.id.food_taj);
+        Button btn_market = findViewById(R.id.market_taj);
+
+
+        btn_food.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TajMahalInfo.this,UpFood.class);
+                startActivity(intent);
+            }
+        });
+        btn_market.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TajMahalInfo.this,UpMarket.class);
+                startActivity(intent);
+            }
+        });
     }
 }

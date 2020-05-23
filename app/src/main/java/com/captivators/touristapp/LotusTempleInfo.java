@@ -22,5 +22,23 @@ public class LotusTempleInfo extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        Button btn_food = findViewById(R.id.food_lotus_temple);
+        Button btn_market = findViewById(R.id.market_lotus_temple);
+
+
+        btn_food.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LotusTempleInfo.this,DelhiFood.class);
+                startActivity(intent);
+            }
+        });
+        btn_market.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LotusTempleInfo.this,DelhiMarket.class);
+                startActivity(intent);
+            }
+        });
     }
 }

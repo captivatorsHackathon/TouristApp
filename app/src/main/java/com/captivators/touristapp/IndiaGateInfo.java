@@ -23,5 +23,24 @@ public class IndiaGateInfo extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        Button btn_food = findViewById(R.id.food_India_Gate);
+        Button btn_market = findViewById(R.id.market_India_Gate);
+
+
+
+        btn_food.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(IndiaGateInfo.this,DelhiFood.class);
+                startActivity(intent);
+            }
+        });
+        btn_market.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(IndiaGateInfo.this,DelhiMarket.class);
+                startActivity(intent);
+            }
+        });
     }
 }

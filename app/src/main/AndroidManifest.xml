@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.captivators.touristapp" >
+    package="com.captivators.touristapp">
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -17,41 +17,72 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
-        <activity android:name=".Dashboard" >
-        </activity>
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".UpFood" android:label="Food"/>
+        <activity android:name=".UpMarket" android:label="Market"/>
+        <activity android:name=".PinkCityFood" android:label="Food"/>
+        <activity android:name=".PinkCityMarket" android:label="Market"/>
+        <activity android:name=".DelhiMarket" android:label="Market"/>
+        <activity android:name=".DelhiFood" android:label="Food"/>
+        <activity android:name=".Dashboard" />
         <activity
             android:name=".SplashActivity"
             android:configChanges="uiMode"
-            android:theme="@style/AppTheme.Launcher" >
+            android:theme="@style/AppTheme.Launcher">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ImageScan" android:label="Get info" />
+        <activity
+            android:name=".ImageScan"
+            android:label="Get info" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <activity android:name=".ListOfPlaces" android:label="Plan a Trip" android:theme="@style/Theme.AppCompat.DayNight"/>
-        <activity android:name=".IndiaGateInfo" android:label="India Gate" android:theme="@style/Theme.AppCompat.DayNight"/>
-        <activity android:name=".TajMahalInfo" android:label="Taj Mahal" android:theme="@style/Theme.AppCompat.DayNight"/>
-        <activity android:name=".LotusTempleInfo" android:label="Lotus Temple" android:theme="@style/Theme.AppCompat.DayNight"/>
-        <activity android:name=".HavaMahalInfo" android:label="Hava Mahal" android:theme="@style/Theme.AppCompat.DayNight"/>
-
+        <activity
+            android:name=".ListOfPlaces"
+            android:label="Plan a Trip"
+            android:theme="@style/Theme.AppCompat.DayNight" />
+        <activity
+            android:name=".IndiaGateInfo"
+            android:label="India Gate"
+            android:theme="@style/Theme.AppCompat.DayNight" />
+        <activity
+            android:name=".TajMahalInfo"
+            android:label="Taj Mahal"
+            android:theme="@style/Theme.AppCompat.DayNight" />
+        <activity
+            android:name=".LotusTempleInfo"
+            android:label="Lotus Temple"
+            android:theme="@style/Theme.AppCompat.DayNight" />
+        <activity
+            android:name=".HavaMahalInfo"
+            android:label="Hava Mahal"
+            android:theme="@style/Theme.AppCompat.DayNight" />
         <activity android:name=".TajMahalMaps" />
         <activity android:name=".LotusTempleMaps" />
         <activity android:name=".HavaMahalMaps" />
         <activity android:name=".IndiaGateMaps" />
-
-        <activity android:name=".ListOfStates" android:label="CHOOSE YOUR DESTINATION" />
-        <activity android:name=".GetPlaceInfo" android:label="info"></activity>
-        <activity android:name=".ListOfPlacesUp" android:label="Uttar Pradesh"/>
-        <activity android:name=".ListOfPlacesDehli" android:label="Dehli"/>
-        <activity android:name=".ListOfPlacesRaj" android:label="Rajasthan"/>
+        <activity
+            android:name=".ListOfStates"
+            android:label="CHOOSE YOUR DESTINATION" />
+        <activity
+            android:name=".GetPlaceInfo"
+            android:label="info" />
+        <activity
+            android:name=".ListOfPlacesUp"
+            android:label="Uttar Pradesh" />
+        <activity
+            android:name=".ListOfPlacesDehli"
+            android:label="Dehli" />
+        <activity
+            android:name=".ListOfPlacesRaj"
+            android:label="Rajasthan" />
     </application>
 
 </manifest>
