@@ -1,13 +1,13 @@
 package com.captivators.touristapp;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class ListOfPlaces extends AppCompatActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class ListOfPlacesDehli extends AppCompatActivity {
 
     Button btn_lotus, btn_indiagate,btn_taj,btn_hava;
     @Override
@@ -18,8 +18,7 @@ public class ListOfPlaces extends AppCompatActivity {
 
         btn_lotus= (Button)findViewById(R.id.lotusButton);
         btn_indiagate= (Button)findViewById(R.id.indiaButton);
-        btn_taj= (Button)findViewById(R.id.tajButton);
-        btn_hava= (Button)findViewById(R.id.havaButton);
+
 
 
         btn_indiagate.setOnClickListener(new View.OnClickListener() {
@@ -35,18 +34,6 @@ public class ListOfPlaces extends AppCompatActivity {
             }
         });
 
-        btn_taj.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openTajActivity();
-            }
-        });
-        btn_hava.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openHavaActivity();
-            }
-        });
 
     }
 
@@ -55,15 +42,6 @@ public class ListOfPlaces extends AppCompatActivity {
         startActivity(intend);
     }
 
-    public void openTajActivity(){
-        Intent intend= new Intent(this, TajMahalInfo.class);
-        startActivity(intend);
-    }
-
-    public void openHavaActivity(){
-        Intent intend= new Intent(this, HavaMahalInfo.class);
-        startActivity(intend);
-    }
 
     public void openLotusActivity(){
         Intent intend= new Intent(this, LotusTempleInfo.class);

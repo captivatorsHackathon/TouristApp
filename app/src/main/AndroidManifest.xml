@@ -45,7 +45,11 @@
         <activity android:name=".LotusTempleMaps" />
         <activity android:name=".HavaMahalMaps" />
         <activity android:name=".IndiaGateMaps" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".ListOfStates" android:label="CHOOSE YOUR DESTINATION"/>
+
+        <activity android:name=".ListOfPlacesUp" android:label="Uttar Pradesh"/>
+        <activity android:name=".ListOfPlacesDehli" android:label="Dehli"/>
+        <activity android:name=".ListOfPlacesRaj" android:label="Rajasthan"/>
     </application>
 
 </manifest>
