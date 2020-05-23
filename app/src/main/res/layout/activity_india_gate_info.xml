@@ -85,10 +85,11 @@
 
             </TextView>
             <TextView
-                android:layout_margin="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text=" Edwin Lutyens">
+                android:text="Edwin Lutyens">
 
             </TextView>
 
@@ -104,9 +105,10 @@
             </TextView>
             <TextView
                 android:layout_width="match_parent"
-                android:layout_margin="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="8dp"
                 android:layout_height="match_parent"
-                android:text="  Rajpath, India Gate, New Delhi, Delhi 110001"
+                android:text="Rajpath, India Gate, New Delhi, Delhi 110001"
                 >
             </TextView>
 
@@ -121,7 +123,8 @@
             </TextView>
             <TextView
                 android:layout_width="match_parent"
-                android:layout_margin="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="8dp"
                 android:layout_height="match_parent"
                 android:text="07:00 PM and 09:30 PM."
                 >

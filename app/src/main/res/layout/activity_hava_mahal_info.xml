@@ -84,10 +84,11 @@
 
            </TextView>
            <TextView
-               android:layout_margin="8dp"
+               android:layout_marginLeft="8dp"
+               android:layout_marginBottom="8dp"
                android:layout_width="match_parent"
                android:layout_height="match_parent"
-               android:text="  Pratap Singh of Jaipur, Lal Chand Ustad">
+               android:text="Pratap Singh of Jaipur, Lal Chand Ustad">
 
            </TextView>
 
@@ -104,8 +105,9 @@
            <TextView
                android:layout_width="match_parent"
                android:layout_height="match_parent"
-               android:layout_margin="8dp"
-               android:text=" Hawa Mahal Rd, Badi Choupad, J.D.A. Market, Pink City, Jaipur, Rajasthan 302002"
+               android:layout_marginLeft="8dp"
+               android:layout_marginBottom="8dp"
+               android:text="Hawa Mahal Rd, Badi Choupad, J.D.A. Market, Pink City, Jaipur, Rajasthan 302002"
                >
            </TextView>
 
@@ -123,7 +125,8 @@
                android:layout_width="match_parent"
                android:layout_height="match_parent"
                android:text="05:00 PM and 09:00 PM."
-               android:layout_margin="8dp"
+               android:layout_marginLeft="8dp"
+               android:layout_marginBottom="8dp"
                >
            </TextView>
            <Button

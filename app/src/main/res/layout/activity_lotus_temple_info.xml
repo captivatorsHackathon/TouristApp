@@ -84,7 +84,8 @@
 
                     </TextView>
                     <TextView
-                        android:layout_margin="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginBottom="8dp"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="Fariborz Sahba">
@@ -104,8 +105,9 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_margin="8dp"
-                        android:text=" Lotus Temple Rd, Bahapur, Shambhu Dayal Bagh, Kalkaji, New Delhi, Delhi 110019"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="Lotus Temple Rd, Bahapur, Shambhu Dayal Bagh, Kalkaji, New Delhi, Delhi 110019"
                         >
                     </TextView>
 
@@ -123,7 +125,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="9 AM to 7 PM "
-                        android:layout_margin="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginBottom="8dp"
                         >
                     </TextView>
                 </LinearLayout>
