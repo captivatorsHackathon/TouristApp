@@ -65,7 +65,7 @@
                                 <ImageView
                                     android:layout_width="match_parent"
                                     android:layout_height="220dp"
-                                    android:src="@drawable/indiagate"
+
                                     android:layout_centerInParent="true"
                                     android:id="@+id/Image1"
                                     />
@@ -118,7 +118,7 @@
                                 <ImageView
                                     android:layout_width="match_parent"
                                     android:layout_height="220dp"
-                                    android:src="@drawable/lotutemple"
+
                                     android:layout_centerInParent="true"
                                     android:id="@+id/Image2"
                                     />
