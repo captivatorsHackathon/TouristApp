@@ -36,11 +36,15 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <activity android:name=".TajMahal" />
-        <activity android:name=".LotusTemple" />
-        <activity android:name=".HavaMahal" >
-        </activity>
-        <activity android:name=".IndiaGate" />
+        <activity android:name=".ListOfPlaces" />
+        <activity android:name=".IndiaGateInfo" />
+        <activity android:name=".TajMahalInfo" />
+        <activity android:name=".LotusTempleInfo" />
+        <activity android:name=".HavaMahalInfo" />
+        <activity android:name=".TajMahalMaps" />
+        <activity android:name=".LotusTempleMaps" />
+        <activity android:name=".HavaMahalMaps" />
+        <activity android:name=".IndiaGateMaps" />
         <activity android:name=".MainActivity" />
     </application>
 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".lotus">
+    tools:context=".TajMahalInfo">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -24,7 +24,7 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
-                    android:text="Lotus Temple"
+                    android:text="Taj Mahal"
                     android:textColor="#39CCCC"
                     android:textSize="30sp"
                     android:textStyle="bold"
@@ -68,68 +68,73 @@
                                     android:layout_centerInParent="true"
                                     android:id="@+id/Image1"
                                     />
-
                             </RelativeLayout>
 
+
                         </androidx.cardview.widget.CardView>
-
                     </LinearLayout>
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="The Lotus Temple, located in Delhi, India, is a Baháʼí House of Worship that was dedicated in December 1986."
-                        >
-                    </TextView>
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Architect"
-                        android:textStyle="bold">
-
-                    </TextView>
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Fariborz Sahba">
-
-                    </TextView>
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="ADDRESS:"
-                        android:textStyle="bold"
-                        android:textColor="#000000"
-                        >
-
-                    </TextView>
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text=" Lotus Temple Rd, Bahapur, Shambhu Dayal Bagh, Kalkaji, New Delhi, Delhi 110019"
-                        >
-                    </TextView>
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="VISITING HOURS:"
-                        android:textStyle="bold"
-                        android:textColor="#000000"
-                        >
-
-                    </TextView>
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="9 AM to 7 PM "
-                        >
-                    </TextView>
                 </LinearLayout>
             </RelativeLayout>
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Mughal emperor Shah Jahan to house the tomb of his favourite wife, Mumtaz Mahal; it also houses the tomb of Shah Jahan himself."
+                >
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Architect"
+                android:textStyle="bold">
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Ustad Ahmad Lahouri, Ustad Isa">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="ADDRESS:"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                >
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Dharmapuri, Forest Colony, Tajganj, Agra, Uttar Pradesh 282001"
+                >
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="VISITING HOURS:"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                >
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="6:30pm- 6:30pm and 8:30pm to 12:30 am."
+                >
+            </TextView>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="discover places"
+                android:id="@+id/discover_taj">
+            </Button>
         </LinearLayout>
     </ScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

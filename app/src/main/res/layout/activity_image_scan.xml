@@ -5,12 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ImageScan"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:gravity="center">
+
     <ImageView
+        android:id="@+id/showPreview"
         android:layout_width="match_parent"
         android:layout_height="500dp"
-        android:id="@+id/showPreview">
+        android:layout_margin="12dp">
     </ImageView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="12dp">
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -20,7 +28,17 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="upload"
+        android:text="upload picture"
         android:id="@+id/upload">
     </Button>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="get info"
+        android:textColor="#ffffff"
+        android:backgroundTint="#32CD32"
+        android:id="@+id/find"
+        android:layout_marginTop="12dp">
+    </Button></LinearLayout>
+
 </LinearLayout>

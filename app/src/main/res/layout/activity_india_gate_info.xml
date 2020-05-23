@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".answer">
+    tools:context=".IndiaGateInfo">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -24,7 +24,7 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
-                    android:text="Taj Mahal"
+                    android:text="India Gate"
                     android:textColor="#39CCCC"
                     android:textSize="30sp"
                     android:textStyle="bold"
@@ -79,7 +79,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="Mughal emperor Shah Jahan to house the tomb of his favourite wife, Mumtaz Mahal; it also houses the tomb of Shah Jahan himself."
+                android:text="The India Gate is a war memorial located astride the Rajpath, on the eastern edge of the ceremonial axis of New Delhi, formerly called Kingsway."
                 >
             </TextView>
             <TextView
@@ -92,7 +92,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="Ustad Ahmad Lahouri, Ustad Isa">
+                android:text=" Edwin Lutyens">
 
             </TextView>
 
@@ -108,7 +108,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="Dharmapuri, Forest Colony, Tajganj, Agra, Uttar Pradesh 282001"
+                android:text="  Rajpath, India Gate, New Delhi, Delhi 110001"
                 >
             </TextView>
 
@@ -124,10 +124,15 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="6:30pm- 6:30pm and 8:30pm to 12:30 am."
+                android:text="07:00 PM and 09:30 PM."
                 >
             </TextView>
-
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="discover India Gate"
+                android:id="@+id/discover_india_gate">
+            </Button>
         </LinearLayout>
     </ScrollView>
 

@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HavaMahal"
+    tools:context=".LotusTempleMaps"
     android:orientation="vertical"
     >
 
     <fragment
-        android:id="@+id/mapHava"
+        android:id="@+id/mapLotus"
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
@@ -18,7 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="scan image"
-        android:id="@+id/xyzHava"
+        android:id="@+id/xyzlotus"
         android:layout_alignParentBottom="true"/>
 
 </RelativeLayout>

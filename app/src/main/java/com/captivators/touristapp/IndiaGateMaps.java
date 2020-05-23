@@ -20,9 +20,8 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.Polygon;
 import com.google.android.gms.maps.model.PolygonOptions;
 import com.google.android.gms.maps.model.Polyline;
-import com.google.android.gms.maps.model.PolylineOptions;
 
-public class HavaMahal extends FragmentActivity implements
+public class IndiaGateMaps extends FragmentActivity implements
         OnMapReadyCallback,
         GoogleMap.OnPolylineClickListener,
         GoogleMap.OnPolygonClickListener{
@@ -32,18 +31,18 @@ public class HavaMahal extends FragmentActivity implements
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hava_mahal);
-        goToImage = findViewById(R.id.xyzHava);
+        setContentView(R.layout.activity_india_gate_maps);
+        goToImage = findViewById(R.id.xyzGate);
 
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
-                .findFragmentById(R.id.mapHava);
+                .findFragmentById(R.id.mapGate);
         mapFragment.getMapAsync(this);
 
         goToImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HavaMahal.this,ImageScan.class);
+                Intent intent = new Intent(IndiaGateMaps.this,ImageScan.class);
                 startActivity(intent);
             }
         });
@@ -54,27 +53,29 @@ public class HavaMahal extends FragmentActivity implements
         // Add a marker in Sydney and move the camera
 
 
-        LatLng havaMahal = new LatLng(26.924175 ,75.826744);
+        LatLng indiaGate = new LatLng(28.612837, 77.229531);
 
 
-        Marker havamahal  = mMap.addMarker(new MarkerOptions().position(havaMahal).title("Taj Mahal").snippet("The Taj Mahal is an ivory-white marble mausoleum ").icon(BitmapDescriptorFactory.fromBitmap(resizeMapIcons("marker",150,150))));
+        Marker tajmahal  = mMap.addMarker(new MarkerOptions().position(indiaGate).title("Taj Mahal").snippet("The Taj Mahal is an ivory-white marble mausoleum ").icon(BitmapDescriptorFactory.fromBitmap(resizeMapIcons("marker",150,150))));
 
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(havaMahal));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(indiaGate));
         Polygon polyline1 = googleMap.addPolygon(new PolygonOptions()
                 .clickable(true)
                 .add(
-                        new LatLng(26.922916, 75.826854),
-                        new LatLng(26.924672, 75.818494),
-                        new LatLng(26.931696, 75.820149),
-                        new LatLng(26.929753, 75.828782),
-                        new LatLng(26.922916, 75.826854)));
+                        new LatLng(28.619838, 77.218767),
+                        new LatLng(28.625782, 77.232105),
+                        new LatLng(28.609647, 77.249846),
+                        new LatLng(28.595277, 77.253302),
+                        new LatLng(28.592339, 77.232799),
+                        new LatLng(28.601634, 77.229757),
+                       // new LatLng(28.610610, 77.212204),
+                        new LatLng(28.607264, 77.217970),
+                        new LatLng(28.619838, 77.218767)));
 
         // Position the map's camera near Alice Springs in the center of Australia,
         // and set the zoom factor so most of Australia shows on the screen.
+        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(28.612837, 77.229531), 15));
         polyline1.setFillColor(0x1A388E3C);
-
-        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(26.924175 ,75.826744), 16));
-
         // Set listeners for click events.
         googleMap.setOnPolylineClickListener(this);
         googleMap.setOnPolygonClickListener(this);

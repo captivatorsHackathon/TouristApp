@@ -7,7 +7,6 @@ import android.os.Bundle;
 
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -38,7 +37,7 @@ public class SplashActivity extends AppCompatActivity {
 
                 sleep(4000);
 
-                Intent intent = new Intent(SplashActivity.this,Dashboard.class);
+                Intent intent = new Intent(SplashActivity.this, ListOfPlaces.class);
                 startActivity(intent);
                 finish();
             } catch (InterruptedException e) {

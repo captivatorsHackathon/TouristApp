@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".places">
+    tools:context=".HavaMahalInfo">
    <ScrollView
        android:layout_width="match_parent"
        android:layout_height="match_parent">
@@ -126,8 +126,12 @@
                android:text="05:00 PM and 09:00 PM."
                >
            </TextView>
-
-
+           <Button
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Dicover Hava Mahal"
+               android:id="@+id/discover_hava_mahal">
+           </Button>
        </LinearLayout>
    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,20 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".capital">
+    tools:context=".ListOfPlaces">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
             >
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+
 
                 <TextView
                     android:layout_width="match_parent"
@@ -29,23 +26,21 @@
                     android:textSize="30sp"
                     android:textStyle="bold"
                     android:textAlignment="center"
+                    android:layout_margin="12dp"
                     >
                 </TextView>
+
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="50dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginLeft="10dp"
                     android:orientation="vertical"
                     android:background="#D3D3D3"
                     >
-
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="330dp"
                         android:orientation="horizontal"
-                        android:layout_marginBottom="10dp"
                         >
 
                         <androidx.cardview.widget.CardView
@@ -53,8 +48,8 @@
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:gravity="center"
-                            android:layout_marginRight="5dp"
-                            android:layout_marginTop="10dp"
+                            android:elevation="12dp"
+                            android:layout_margin="12dp"
                             >
 
                             <RelativeLayout
@@ -94,20 +89,21 @@
 
                     </LinearLayout>
 
+
+
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="330dp"
                         android:orientation="horizontal"
-                        android:layout_marginBottom="10dp"
                         >
-
                         <androidx.cardview.widget.CardView
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:gravity="center"
-                            android:layout_marginRight="5dp"
-                            android:layout_marginTop="10dp"
+                            android:elevation="12dp"
+                            android:layout_margin="12dp"
                             >
 
                             <RelativeLayout
@@ -129,8 +125,7 @@
                                     android:textSize="16sp"
                                     android:layout_below="@id/Image2"
                                     android:layout_centerHorizontal="true"
-                                    android:layout_marginTop="10dp"
-                                    android:layout_marginBottom="10dp"
+
                                     >
                                 </TextView>
                                 <Button
@@ -147,8 +142,108 @@
 
                     </LinearLayout>
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="330dp"
+                        android:orientation="horizontal"
+                        >
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:elevation="12dp"
+                            android:layout_margin="12dp"
+                            >
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                >
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="220dp"
+
+                                    android:layout_centerInParent="true"
+                                    android:id="@+id/Image4"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Taj Mahal "
+                                    android:textSize="16sp"
+                                    android:layout_below="@id/Image4"
+                                    android:layout_centerHorizontal="true"
+
+                                    >
+                                </TextView>
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/tajButton"
+                                    android:background="@android:color/transparent"
+                                    />
+
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="330dp"
+                        android:orientation="horizontal"
+                        >
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:elevation="12dp"
+                            android:layout_margin="12dp"
+                            >
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                >
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="220dp"
+
+                                    android:layout_centerInParent="true"
+                                    android:id="@+id/Image3"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Hava Mahal"
+                                    android:textSize="16sp"
+                                    android:layout_below="@id/Image3"
+                                    android:layout_centerHorizontal="true"
+                                    >
+                                </TextView>
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/havaButton"
+                                    android:background="@android:color/transparent"
+                                    />
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
                 </LinearLayout>
-            </RelativeLayout>
 
         </LinearLayout>
     </ScrollView>
