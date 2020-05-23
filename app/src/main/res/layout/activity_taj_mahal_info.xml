@@ -131,15 +131,41 @@
                 android:layout_marginBottom="8dp"
                 >
             </TextView>
-            <Button
+
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="discover places"
-                android:id="@+id/discover_taj"
-                android:layout_margin="12dp"
-                android:textColor="#ffffff"
-                android:backgroundTint="#45B6Fe">
-            </Button>
+                android:orientation="horizontal"
+                android:gravity="center">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="discover"
+                    android:id="@+id/discover_taj"
+                    android:layout_margin="12dp"
+                    android:textColor="#ffffff"
+                    android:backgroundTint="#45B6Fe">
+                </Button>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="food"
+                    android:id="@+id/food_taj"
+                    android:layout_margin="12dp"
+                    android:textColor="#ffffff"
+                    android:backgroundTint="#45B6Fe">
+                </Button>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="market"
+                    android:id="@+id/market_taj"
+                    android:layout_margin="12dp"
+                    android:textColor="#ffffff"
+                    android:backgroundTint="#45B6Fe">
+                </Button>
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 

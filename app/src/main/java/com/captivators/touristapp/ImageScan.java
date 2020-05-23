@@ -26,21 +26,36 @@ import java.io.IOException;
 import java.io.InputStream;
 
 public class ImageScan extends AppCompatActivity {
+    public static Bitmap img;
     static final int REQUEST_IMAGE_CAPTURE = 1;
     static final int REQUEST_IMAGE_PICKER = 2;
     ImageView ivShowImage ;
     Button btnCapture ;
     Button btnPick;
+    Button getInfo;
     
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_image_scan);
-
+        img=null;
         ivShowImage = findViewById(R.id.showPreview);
         btnCapture = findViewById(R.id.takePicture);
         btnPick = findViewById(R.id.upload);
+        getInfo = findViewById(R.id.find);
 
+        getInfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(img!=null){
+                    Intent intent = new Intent(ImageScan.this,GetPlaceInfo.class);
+                    startActivity(intent);
+                }else {
+                    Toast toast = Toast.makeText(getApplicationContext(), "no image selected", Toast.LENGTH_LONG);
+                    toast.show();
+                }
+            }
+        });
         btnCapture.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -74,6 +89,7 @@ public class ImageScan extends AppCompatActivity {
             Bundle extras = data.getExtras();
             Bitmap imageBitmap = (Bitmap) extras.get("data");
             ivShowImage.setImageBitmap(imageBitmap);
+            img = imageBitmap;
         }
 
         if (requestCode == REQUEST_IMAGE_PICKER && resultCode == RESULT_OK) {
@@ -82,6 +98,7 @@ public class ImageScan extends AppCompatActivity {
                 final InputStream imageStream = getContentResolver().openInputStream(imageUri);
                 final Bitmap selectedImage = BitmapFactory.decodeStream(imageStream);
                 ivShowImage.setImageBitmap(selectedImage);
+                img = selectedImage;
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
 

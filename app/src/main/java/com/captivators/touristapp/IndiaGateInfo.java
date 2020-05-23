@@ -14,7 +14,7 @@ public class IndiaGateInfo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_india_gate_info);
 
-        Button btn_india_gate = findViewById(R.id.discover_india_gate);
+        Button btn_india_gate = findViewById(R.id.discover_India_Gate);
 
         btn_india_gate.setOnClickListener(new View.OnClickListener() {
             @Override

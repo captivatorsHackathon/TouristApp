@@ -13,7 +13,7 @@ public class HavaMahalInfo extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hava_mahal_info);
-        Button btn_hava_mahal = findViewById(R.id.discover_hava_mahal);
+        Button btn_hava_mahal = findViewById(R.id.discover_Hava_Mahal);
 
         btn_hava_mahal.setOnClickListener(new View.OnClickListener() {
             @Override

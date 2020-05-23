@@ -41,12 +41,14 @@
         <activity android:name=".TajMahalInfo" android:label="Taj Mahal" android:theme="@style/Theme.AppCompat.DayNight"/>
         <activity android:name=".LotusTempleInfo" android:label="Lotus Temple" android:theme="@style/Theme.AppCompat.DayNight"/>
         <activity android:name=".HavaMahalInfo" android:label="Hava Mahal" android:theme="@style/Theme.AppCompat.DayNight"/>
+
         <activity android:name=".TajMahalMaps" />
         <activity android:name=".LotusTempleMaps" />
         <activity android:name=".HavaMahalMaps" />
         <activity android:name=".IndiaGateMaps" />
-        <activity android:name=".ListOfStates" android:label="CHOOSE YOUR DESTINATION"/>
 
+        <activity android:name=".ListOfStates" android:label="CHOOSE YOUR DESTINATION" />
+        <activity android:name=".GetPlaceInfo" android:label="info"></activity>
         <activity android:name=".ListOfPlacesUp" android:label="Uttar Pradesh"/>
         <activity android:name=".ListOfPlacesDehli" android:label="Dehli"/>
         <activity android:name=".ListOfPlacesRaj" android:label="Rajasthan"/>
